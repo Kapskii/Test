@@ -52,3 +52,16 @@ function makeNegative(num) {
     return resoult
   }
 console.log(arrayPlusArray(array1, array2))  
+
+
+//посчитать кол-во букв 'а' в строке
+//на входе строка 'asdfasdfasdfasdfa' - результат 5
+
+const stroka = 'asdfasdfasdfasdfa';
+let summa = 0;
+for (let i = 0; i < stroka.length; i++){
+if (stroka[i] === 'a') summa += 1;
+}
+console.log(summa)
+
+
