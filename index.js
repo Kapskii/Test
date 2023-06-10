@@ -75,3 +75,21 @@ function reverseArray(n) {
 }
 console.log(reverseArray(10))
 
+
+function solution(str, ending){
+ let reverseStr = [];
+ let reverseEnding = [];
+
+ for (let i = 0; i < str.length; i++){
+    reverseStr.unshift(str[i]);
+ }
+ for (let i = 0; i < ending.length; i++){
+    reverseEnding.unshift(ending[i]);
+ }
+ for (let i = 0; i < ending.length; i++) {
+    if (reverseEnding[i] !== reverseStr[i]){
+        return false;
+    } 
+ }
+ return true
+ }
