@@ -65,3 +65,13 @@ if (stroka[i] === 'a') summa += 1;
 console.log(summa)
 
 
+
+function reverseArray(n) {
+  let array = [];
+  for (let i = 1; i <= n; i++){
+    array.unshift(i)
+  }
+  return array;
+}
+console.log(reverseArray(10))
+
