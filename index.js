@@ -108,3 +108,12 @@ function solution(str, ending){
 };
 
 const gloveBoxContents = myStorage.car.inside['glove box'];
+
+
+function problem(x) {
+  if (typeof x == 'number') {
+    return x * 50 + 6
+   } else {
+     return "Error"
+   }
+  }
