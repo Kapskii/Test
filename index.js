@@ -187,3 +187,8 @@ function betterThanAverage(classPoints, yourPoints) {
     classAvg = classAvg/classPoints.length; 
     return yourPoints > classAvg;
   }
+
+
+  const binaryArrayToNumber = arr => {
+    return parseInt (arr.join (""), 2); 
+  }
