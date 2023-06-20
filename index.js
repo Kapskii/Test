@@ -242,3 +242,9 @@ function betterThanAverage(classPoints, yourPoints) {
     }
     
     console.log(lookUpProfile("Harry", "likes"));
+
+
+
+    function randomRange(myMin, myMax) {
+      return Math.floor(Math.random() * (myMax - myMin + 1)) + myMin;
+    }
