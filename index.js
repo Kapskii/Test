@@ -192,3 +192,12 @@ function betterThanAverage(classPoints, yourPoints) {
   const binaryArrayToNumber = arr => {
     return parseInt (arr.join (""), 2); 
   }
+
+
+  function sum(arr, n) {
+    if (n <= 0) {
+      return 0;
+    } else {
+      return sum(arr, n - 1) + arr[n - 1];
+    }
+    }
