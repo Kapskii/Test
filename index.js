@@ -299,3 +299,54 @@ let evenOdd = s.length % 2 === 0
   
   return (evenOdd == true)? minMid.concat(mid): mid
 }
+
+function peopleWithAgeDrink(old) {
+  switch (true) {
+      case (old < 14):
+      return "drink toddy";
+      case (old < 18):
+      return "drink coke";
+      case (old < 21):
+      return "drink beer";
+      default:
+      return "drink whisky";
+    
+  }
+};
+console.log(peopleWithAgeDrink(15))
+
+
+function isTriangle(a,b,c) {
+
+  if (a <= 0 || b <= 0 || c <= 0) {
+    return false
+  }
+  const arr = [a,b,c].sort((a,b) => a-b);
+  const summ = arr[0] + arr[1];
+ 
+  return  summ > arr[2]     
+}
+
+
+console.log(isTriangle(3,7,10))
+
+
+
+
+function fakeBin(x) {
+  let result = "";
+for (let i = 0; i < x.length; i++) {
+
+if (x[i] <= 4) {
+result += "0";
+} else if (x[i] >= 5) {
+result += "1";
+}
+
+
+}
+console.log(result)
+return result; 
+}
+
+fakeBin('353535353535')
