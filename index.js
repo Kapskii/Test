@@ -347,3 +347,17 @@ return result;
 }
 
 fakeBin('353535353535')
+
+
+function findAverage(array) {
+  let summ = 0;
+    if (array.length == 0) {
+      return 0
+          }
+    for (i = 0; i < array.length; i++) {
+      summ += array[i];
+    }
+     
+    let average = summ / array.length
+      return average
+    }
