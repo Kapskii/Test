@@ -361,3 +361,22 @@ function findAverage(array) {
     let average = summ / array.length
       return average
     }
+
+
+    function isIsogram(str){
+      if (!str) {
+     return true
+      }
+    for (let i = 0; i < str.length; i++) {
+      let count = 0;
+      for (let j = 0; j < str.length; j++) {
+        if (str[j].toLowerCase() === str[i].toLowerCase()) {
+          count++;    
+        }
+        if (count > 1) {
+          return false
+        }
+      }
+    }
+    return true
+  }
