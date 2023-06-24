@@ -460,3 +460,54 @@ function findAverage(array) {
     function getChar(c) {
       return String.fromCharCode(c)
       }
+
+
+      function oddOrEven(array) {
+        if (array.length === 0) {
+          return "even"
+        }
+       let summ = 0;
+       for (i = 0; i < array.length; i++) {
+         summ += array[i]; 
+       }
+      return (summ % 2 ===0) ? 'even' : 'odd'
+     }
+      console.log(oddOrEven([1, 2, 3]))
+
+
+
+     function position(letter){
+      const alphabet = [
+        "A",
+        "B",
+        "C",
+        "D",
+        "E",
+        "F",
+        "G",
+        "H",
+        "I",
+        "J",
+        "K",
+        "L",
+        "M",
+        "N",
+        "O",
+        "P",
+        "Q",
+        "R",
+        "S",
+        "T",
+        "U",
+        "V",
+        "W",
+        "X",
+        "Y",
+        "Z",
+      ];
+        for (i = 0; i < alphabet.length; i++) {
+          if (letter.toUpperCase() === alphabet[i]) {
+            return "Position of alphabet: " + (i + 1)
+          }
+        }
+      }
