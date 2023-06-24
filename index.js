@@ -380,3 +380,19 @@ function findAverage(array) {
     }
     return true
   }
+
+  function f(x, cc) { 
+    let arr = [];
+      for (let key in cc) {
+        arr.push(cc[key])
+      }
+      
+      for (let i = 0; i < arr.length; i++) {
+        if (x === arr[i]) { 
+            return (i === arr.length - 1)
+            ? arr[0]
+            : arr[i+1]
+       }
+      }
+    }
+    console.log(f( 5, { a:3, b:4, c:5, d:6 } )); //6
