@@ -476,6 +476,7 @@ function findAverage(array) {
 
 
 
+
      function position(letter){
       const alphabet = [
         "A",
