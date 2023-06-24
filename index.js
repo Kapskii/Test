@@ -441,3 +441,9 @@ function findAverage(array) {
    }
 
    splitString('A man of the year')
+
+
+   function upperCase(strA) {
+    return strA.toUpperCase()
+  }
+  upperCase('A man of the year')
