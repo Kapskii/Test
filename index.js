@@ -456,3 +456,7 @@ function findAverage(array) {
     }
     return multiples;
   }
+
+    function getChar(c) {
+      return String.fromCharCode(c)
+      }
