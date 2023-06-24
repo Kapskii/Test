@@ -435,19 +435,9 @@ function findAverage(array) {
 
 
 
+
     function splitString(strS) {
-        let newStrS = strS.split([' ',]);
-        console.log(newStrS)
-        return newStrS
-        
-    }
+      return strS.split([' ',])   
+   }
 
-    splitString('A man of the year')
-
-
-    function apperCase(strA) {
-      let newStrA = strA.toUpperCase();
-      console.log(newStrA)
-      return strA
-    }
-    apperCase('A man of the year')
+   splitString('A man of the year')
