@@ -396,3 +396,58 @@ function findAverage(array) {
       }
     }
     console.log(f( 5, { a:3, b:4, c:5, d:6 } )); //6
+
+
+    function isPolindrom(str) {
+      let newStr = '';
+      const symbols = [',', ' ', '!', '-', '"',];
+      for (let i = 0; i < str.length; i++) {
+        let temp = true
+          for (let j=0; j<symbols.length; j++) {
+            
+            if (str[i] === symbols[j]){
+                  temp = false
+            }
+          }
+          if (temp === true) {
+            newStr += str[i]
+          }
+          newStr = newStr.toLowerCase();
+      }
+      console.log(newStr, ' - newstr')
+      let arrStr = [];
+      for (i = 0; i < newStr.length; i++) {
+        arrStr.push(newStr[i]) 
+      }
+      const str1 = arrStr.join('');
+      let str2 = arrStr.reverse().join('');
+      if (str1 === str2) {
+        return true
+      } else {
+        return false
+      }
+     
+
+    }
+
+    console.log(isPolindrom('mama'), 'false') //false
+    console.log(isPolindrom('A man, a plan, a canal - Panama'), 'true') //true
+
+
+
+    function splitString(strS) {
+        let newStrS = strS.split([' ',]);
+        console.log(newStrS)
+        return newStrS
+        
+    }
+
+    splitString('A man of the year')
+
+
+    function apperCase(strA) {
+      let newStrA = strA.toUpperCase();
+      console.log(newStrA)
+      return strA
+    }
+    apperCase('A man of the year')
