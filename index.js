@@ -531,3 +531,18 @@ function findAverage(array) {
         console.log(isLeapYear(2000))
         console.log(isLeapYear(2010))
         console.log(isLeapYear(2013))
+
+
+        function sumMul(n,m){
+          let summ = 0;
+            if (n < m) {
+                for (let i = n; i < m; i = i + n) {
+            summ += i;
+          }
+        } else {
+          return 'INVALID'
+        } 
+          return summ
+        }
+
+        console.log(sumMul(2, 100))
