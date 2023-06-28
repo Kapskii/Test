@@ -546,3 +546,17 @@ function findAverage(array) {
         }
 
         console.log(sumMul(2, 100))
+
+
+
+        function sumDigits(number) {
+          let a = number.toString().replace('-','');
+          let summ = 0;
+          for (let i = 0; i < a.length; i++) {
+            summ += +a[i];
+          }
+          return summ
+        }
+        
+
+        console.log(sumDigits(-65))
