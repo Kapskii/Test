@@ -560,3 +560,10 @@ function findAverage(array) {
         
 
         console.log(sumDigits(-65))
+
+
+        function consonantCount(str) {
+          return str.split('').filter(v=>/[aeiouy]/gi.test(v)).length
+        }
+
+        console.log(consonantCount('kajlafjeihgnveiwlkhsf'))
