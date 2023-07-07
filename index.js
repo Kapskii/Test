@@ -593,3 +593,12 @@ function findAverage(array) {
         };
         
         const { today, tomorrow} = HIGH_TEMPERATURES;
+
+
+        const HIGH_TEMPERATURESS = {
+          yesterday: 75,
+          today: 77,
+          tomorrow: 80
+        };
+          
+        const {today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURESS;
