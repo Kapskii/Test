@@ -563,7 +563,16 @@ function findAverage(array) {
 
 
         function consonantCount(str) {
-          return str.split('').filter(v=>/[aeiouy]/gi.test(v)).length
+          return str.split('').filter(i=>/[aeiouy]/gi.test(i)).length
         }
 
         console.log(consonantCount('kajlafjeihgnveiwlkhsf'))
+
+
+        const sum = (...args) => {
+          let total = 0;
+          for (let i = 0; i < args.length; i++) {
+            total += args[i];
+          }
+          return total;
+        }
