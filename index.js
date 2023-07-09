@@ -602,3 +602,8 @@ function findAverage(array) {
         };
           
         const {today: highToday, tomorrow: highTomorrow} = HIGH_TEMPERATURESS;
+
+
+        const areaOrPerimeter = function(l , w) {
+          return l === w ? l * w : l + l + w + w;
+        };
