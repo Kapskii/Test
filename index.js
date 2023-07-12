@@ -569,13 +569,13 @@ function findAverage(array) {
         console.log(consonantCount('kajlafjeihgnveiwlkhsf'))
 
 
-        const sum = (...args) => {
-          let total = 0;
-          for (let i = 0; i < args.length; i++) {
-            total += args[i];
-          }
-          return total;
-        }
+        // const sum = (...args) => {
+        //   let total = 0;
+        //   for (let i = 0; i < args.length; i++) {
+        //     total += args[i];
+        //   }
+        //   return total;
+        // }
 
 
         const arr1 = ['JAN', 'FEB', 'MAR', 'APR', 'MAY'];
@@ -607,3 +607,14 @@ function findAverage(array) {
         const areaOrPerimeter = function(l , w) {
           return l === w ? l * w : l + l + w + w;
         };
+
+
+        const LOCAL_FORECAST = {
+          yesterday: { low: 61, high: 75 },
+          today: { low: 64, high: 77 },
+          tomorrow: { low: 68, high: 80 }
+        };
+        
+        
+          
+        const { today: { low:lowToday, high: highToday }} = LOCAL_FORECAST;
