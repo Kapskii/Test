@@ -627,3 +627,15 @@ function findAverage(array) {
           }
           return n
         }
+
+
+
+        function powerOf4(n) {
+          if (typeof n === 'number' && n !== 0) {
+          while (n % 4 === 0) {
+            n = n / 4;
+            if (n === 1) return true
+          }
+          return (n === 1)
+          } return false
+        }
