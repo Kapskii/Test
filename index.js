@@ -639,3 +639,15 @@ function findAverage(array) {
           return (n === 1)
           } return false
         }
+
+        function sum(matrix) {
+          let result = 0;
+          let n = matrix.length, diag1 = 0, diag2 = 0;
+          for (let i = 0; i < n; i++)
+            diag1 += matrix[i][i];
+          console.log(diag1)
+          for (let i = 0; i < n; i++)
+            diag2 += matrix[i][n - i - 1]
+          console.log(diag2)
+          return diag1 + diag2
+        }
