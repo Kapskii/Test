@@ -650,4 +650,16 @@ function findAverage(array) {
             diag2 += matrix[i][n - i - 1]
           console.log(diag2)
           return diag1 + diag2
-        }
+
+        }  
+
+
+        var capitals = function (word) {
+          let arr = [];
+          for (let i = 0; i < word.length; i++) {
+            if ( word[i] === word[i].toUpperCase()) {  
+              arr.push(i);
+            }    
+        }	
+          return arr
+        };
