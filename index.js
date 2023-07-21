@@ -613,11 +613,11 @@ function findAverage(array) {
           yesterday: { low: 61, high: 75 },
           today: { low: 64, high: 77 },
           tomorrow: { low: 68, high: 80 }
-        };
+        }
         
         
           
-        const { today: { low:lowToday, high: highToday }} = LOCAL_FORECAST;
+        const { today:  {low:lowToday, high:highTodayy} } = LOCAL_FORECAST;
 
 
         function noBoringZeros(n) {
@@ -674,3 +674,11 @@ function findAverage(array) {
         }
           return arr.length ? arr : `${integer} is prime`
         };
+
+
+        function groupByCommas(n) {
+          return n.toLocaleString()
+        }
+
+       
+       
