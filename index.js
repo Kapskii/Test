@@ -690,5 +690,5 @@ let resul = userCheck.test(username);
 
 let sampleWord = "astronaut";
 let pwRegex = /(?=\w{5,})(?=\D\w*\d{2})/; // Change this line
-let result = pwRegex.test(sampleWord);
+let result1 = pwRegex.test(sampleWord);
 
