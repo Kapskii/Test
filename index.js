@@ -699,3 +699,10 @@ let reRegex = /^(\d+) \1 \1$/;
 let resultt = reRegex.test(repeatNum);
 repeatNum.match(reRegex)
 console.log(repeatNum.match(reRegex))
+
+//Use Capture Groups to Search and Replace
+
+let str = "one two three";
+let fixRegex = /(\w+) (\w+) (\w+)/; 
+let replaceText = "$3 $2 $1"; 
+let result2 = str.replace(fixRegex, replaceText);
