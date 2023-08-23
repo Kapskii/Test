@@ -692,3 +692,10 @@ let sampleWord = "astronaut";
 let pwRegex = /(?=\w{5,})(?=\D\w*\d{2})/; // Change this line
 let result1 = pwRegex.test(sampleWord);
 
+//Reuse Patterns Using Capture Groups
+
+let repeatNum = "42 42 42";
+let reRegex = /^(\d+) \1 \1$/;
+let resultt = reRegex.test(repeatNum);
+repeatNum.match(reRegex)
+console.log(repeatNum.match(reRegex))
