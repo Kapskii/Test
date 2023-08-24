@@ -829,3 +829,15 @@ function truncateString(str, num) {
   }
   
   frankenSplice([1, 2, 3], [4, 5, 6], 1);
+
+  //Falsy Bouncer
+
+  function bouncer(arr) {
+    const arr2 = [];
+    for (let i = 0; i < arr.length; i++){
+      if (arr[i]) arr2.push(arr[i])
+    }
+    return arr2;
+  }
+  
+  bouncer([7, "ate", "", false, 9]);
