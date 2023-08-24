@@ -712,3 +712,12 @@ let result2 = str.replace(fixRegex, replaceText);
 let hello = "   Hello, World!  ";
 let wsRegex = /^\s+|\s+$/g; 
 let result3 = hello.replace(wsRegex, "");
+
+// Convert Celsius to Fahrenheit
+
+function convertCtoF(celsius) {
+  let fahrenheit = celsius * 9/5 + 32;
+  return fahrenheit;
+}
+
+convertCtoF(30);
