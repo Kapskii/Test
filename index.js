@@ -841,3 +841,19 @@ function truncateString(str, num) {
   }
   
   bouncer([7, "ate", "", false, 9]);
+
+  //Return the lowest index at which a value should be inserted into an array once it has been sorted.
+
+  function getIndexToIns(arr, num) {
+    if (arr.length === 0) return 0
+    let res
+    arr.sort((a,b)=>a-b)
+    for (let i = 0; i < arr.length; i++){
+      if (arr[i] >= num) {
+        res = i
+        break
+      }
+    }
+    return res ?? arr.length
+  }
+  getIndexToIns([2, 5, 10], 15)
