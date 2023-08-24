@@ -800,3 +800,19 @@ function truncateString(str, num) {
   }
   
   findElement([1, 2, 3, 4], num => num % 2 === 0);
+
+  //Title Case a Sentence
+
+  function titleCase(str) {
+    str = str.toLowerCase();
+    const tempArr = str.split(' ')
+    for (let i = 0; i < tempArr.length; i++){
+      const x = tempArr[i].split('');
+      x[0] = x[0].toUpperCase();
+      tempArr[i] = x.join('')
+    }
+    console.log(tempArr)
+    return tempArr.join(' ');
+  }
+  
+  titleCase("I'm a little tea pot");
